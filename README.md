@@ -16,6 +16,16 @@ Source code for Recipe API app
 
 
 
+# Creating Django custom user model
+
+1. docker-compose run app sh -c "python manage.py startapp core" -> it will create a core app .
+2. removed view and test
+3. create a folder and file test/__init__.py
+4. Add 'core' in settings.py 'INSTALLED_APPS' list
+5. Create a new test file in test folder
+6. Created a Model [User and UserManager] - Added email as USERNAME_FIELD
+7. Migrated - docker-compose run app sh -c "python manage.py makemigrations core"
+8. Run test 
 
 
 
